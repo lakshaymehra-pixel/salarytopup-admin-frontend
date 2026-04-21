@@ -1,0 +1,46 @@
+.kw-wrap { padding: 0; }
+
+.kw-stats { display: flex; gap: 16px; margin-bottom: 24px; }
+.kw-stat { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px 28px; min-width: 110px; text-align: center; border-top: 3px solid var(--c); }
+.kw-stat-val { font-size: 1.8rem; font-weight: 800; color: var(--c); }
+.kw-stat-lbl { font-size: 0.75rem; color: #64748b; margin-top: 2px; }
+
+.kw-layout { display: flex; flex-direction: column; gap: 20px; }
+
+.kw-table-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; overflow: hidden; }
+.kw-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+.kw-table thead tr { background: #f8fafc; }
+.kw-table th { padding: 11px 16px; text-align: left; font-size: 0.72rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1.5px solid #e2e8f0; }
+.kw-table td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+.kw-table tbody tr:last-child td { border-bottom: none; }
+.kw-table tbody tr:hover { background: #f8fafc; }
+.kw-row-selected td { background: #f0f9ff !important; }
+
+.kw-name { font-weight: 600; color: #0d2240; }
+.kw-url { font-size: 0.72rem; color: #94a3b8; margin-top: 2px; }
+
+.kw-rank-badge { font-size: 0.82rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+.kw-rank-na { color: #94a3b8; font-size: 0.85rem; }
+.kw-target { font-size: 0.78rem; color: #64748b; background: #f1f5f9; padding: 2px 8px; border-radius: 10px; }
+
+.kw-change { font-size: 0.78rem; font-weight: 700; }
+.kw-change.up { color: #16a34a; }
+.kw-change.down { color: #ef4444; }
+.kw-change.neutral { color: #94a3b8; }
+
+.kw-rank-update { display: flex; gap: 4px; align-items: center; }
+.kw-rank-input { width: 64px; padding: 5px 8px; border: 1.5px solid #e2e8f0; border-radius: 7px; font-size: 0.82rem; outline: none; }
+.kw-rank-input:focus { border-color: #26b9db; }
+.kw-update-btn { padding: 5px 10px; background: #26b9db; color: #fff; border: none; border-radius: 7px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s; }
+.kw-update-btn:hover { background: #1aa8c8; }
+
+.kw-empty { text-align: center; padding: 60px; color: #94a3b8; font-size: 0.9rem; }
+
+/* Chart card */
+.kw-chart-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 20px 24px; }
+.kw-chart-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.kw-chart-title { font-size: 0.95rem; font-weight: 700; color: #0d2240; }
+.kw-chart-sub { font-size: 0.75rem; color: #94a3b8; margin-top: 2px; }
+.kw-close-chart { background: none; border: none; color: #94a3b8; font-size: 1rem; cursor: pointer; padding: 4px 8px; border-radius: 6px; }
+.kw-close-chart:hover { background: #f1f5f9; color: #0d2240; }
+.kw-notes { margin-top: 12px; padding: 10px 14px; background: #f8fafc; border-radius: 8px; font-size: 0.82rem; color: #64748b; }

@@ -1,0 +1,14 @@
+.is-wrap { padding: 0; }
+.is-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .is-grid { grid-template-columns: 1fr; } }
+.is-info-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f1f5f9; font-size: 0.83rem; color: #64748b; }
+.is-result-box { background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 8px; padding: 10px 14px; font-size: 0.82rem; color: #166534; margin-top: 12px; }
+.is-no-gsc { text-align: center; padding: 20px; color: #64748b; font-size: 0.85rem; }
+.is-inspect-result { display: flex; flex-direction: column; gap: 2px; }
+.is-indexed-badge { font-weight: 700; font-size: 0.88rem; padding: 8px 14px; border-radius: 8px; margin-bottom: 10px; display: inline-block; }
+.is-indexed { background: #f0fdf4; color: #16a34a; }
+.is-not-indexed { background: #fef2f2; color: #ef4444; }
+.is-steps { display: flex; flex-direction: column; gap: 8px; }
+.is-step { font-size: 0.82rem; color: #374151; padding: 6px 10px; background: #f8fafc; border-radius: 6px; }
+.is-step a { color: #3b82f6; }
+.is-step code { background: #e2e8f0; padding: 1px 6px; border-radius: 4px; font-size: 0.78rem; }

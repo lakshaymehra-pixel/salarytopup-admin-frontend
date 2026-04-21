@@ -1,0 +1,21 @@
+.ss-wrap { padding: 0; }
+.ss-content { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 24px; }
+.ss-section { display: flex; flex-direction: column; gap: 16px; max-width: 640px; }
+.ss-status-card { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-radius: 12px; margin-bottom: 4px; }
+.ss-connected { background: #f0fdf4; border: 1.5px solid #86efac; }
+.ss-disconnected { background: #fef2f2; border: 1.5px solid #fecaca; }
+.ss-guide { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px; }
+.ss-guide-title { font-size: 0.85rem; font-weight: 700; color: #0d2240; margin-bottom: 12px; }
+.ss-step { display: flex; align-items: flex-start; gap: 10px; font-size: 0.83rem; color: #374151; margin-bottom: 8px; }
+.ss-field label { display: block; font-size: 0.8rem; font-weight: 600; color: #374151; margin-bottom: 5px; }
+.ss-field input { width: 100%; padding: 10px 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 0.88rem; outline: none; box-sizing: border-box; }
+.ss-field input:focus { border-color: #3b82f6; }
+.ss-hint { font-size: 0.75rem; color: #94a3b8; margin-bottom: 5px; }
+.ss-toggle-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f1f5f9; }
+.ss-switch { position: relative; display: inline-block; width: 44px; height: 24px; flex-shrink: 0; }
+.ss-switch input { opacity: 0; width: 0; height: 0; }
+.ss-slider { position: absolute; cursor: pointer; inset: 0; background: #e2e8f0; border-radius: 24px; transition: 0.2s; }
+.ss-slider:before { position: absolute; content: ''; height: 18px; width: 18px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: 0.2s; }
+.ss-switch input:checked + .ss-slider { background: #0d2240; }
+.ss-switch input:checked + .ss-slider:before { transform: translateX(20px); }
+.ss-divider { font-size: 0.78rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; border-top: 1.5px solid #f1f5f9; padding-top: 12px; margin-top: 4px; }

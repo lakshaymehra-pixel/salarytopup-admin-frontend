@@ -1,0 +1,13 @@
+.il-wrap { padding: 0; }
+.il-count { font-weight: 700; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; }
+.il-zero { background: #fef2f2; color: #ef4444; }
+.il-low { background: #fffbeb; color: #f59e0b; }
+.il-good { background: #f0fdf4; color: #16a34a; }
+.il-links-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.il-link-tag { font-size: 0.72rem; background: #eff6ff; color: #3b82f6; padding: 2px 8px; border-radius: 4px; }
+.il-link-more { font-size: 0.72rem; color: #94a3b8; }
+.il-opps { display: flex; flex-direction: column; gap: 12px; }
+.il-opp-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+.il-opp-source { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 0.88rem; color: #0d2240; }
+.il-opp-suggestions { display: flex; flex-direction: column; gap: 6px; padding-left: 12px; border-left: 2px solid #e2e8f0; }
+.il-opp-item { display: flex; flex-direction: column; font-size: 0.82rem; color: #374151; }

@@ -1,0 +1,17 @@
+.mtm-wrap { padding: 0; }
+.mtm-filters { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; }
+.mtm-total { font-size: 0.8rem; color: #94a3b8; margin-left: auto; }
+
+.mtm-stats-row { display: flex; gap: 12px; margin-bottom: 20px; }
+.mtm-stat { background: #fff; border: 1.5px solid; border-radius: 10px; padding: 12px 20px; display: flex; align-items: center; gap: 10px; }
+.mtm-stat-val { font-size: 1.4rem; font-weight: 800; }
+.mtm-stat-lbl { font-size: 0.75rem; font-weight: 600; }
+
+.mtm-type-badge { font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; background: #f1f5f9; color: #475569; }
+.mtm-status-badge { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+
+.mtm-serp { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; font-family: Arial, sans-serif; }
+.mtm-serp-url { font-size: 0.72rem; color: #202124; opacity: 0.6; margin-bottom: 2px; }
+.mtm-serp-title { font-size: 1rem; color: #1a0dab; font-weight: 400; margin-bottom: 4px; cursor: pointer; }
+.mtm-serp-title:hover { text-decoration: underline; }
+.mtm-serp-desc { font-size: 0.82rem; color: #4d5156; line-height: 1.5; }

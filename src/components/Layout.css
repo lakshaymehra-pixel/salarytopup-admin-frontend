@@ -1,0 +1,270 @@
+/* ── Layout ── */
+.adm-layout { display: flex; min-height: 100vh; background: #f1f5f9; }
+
+/* ── Sidebar ── */
+.adm-sidebar {
+  width: 250px;
+  background: #0f2744;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  z-index: 100;
+  transition: width 0.25s ease;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.adm-layout.collapsed .adm-sidebar { width: 64px; }
+
+/* ── Logo ── */
+.adm-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  flex-shrink: 0;
+  min-height: 74px;
+}
+.adm-logo-img {
+  width: 48px; height: 48px;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+}
+.adm-layout.collapsed .adm-logo {
+  justify-content: center;
+  padding: 14px 8px;
+}
+.adm-layout.collapsed .adm-logo-img {
+  width: 34px;
+  height: 34px;
+}
+.adm-logo-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+/* ── Nav ── */
+.adm-nav {
+  flex: 1;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+.adm-nav::-webkit-scrollbar { width: 3px; }
+.adm-nav::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+
+/* Section label */
+.adm-nav-section {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.22);
+  padding: 12px 12px 4px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.adm-layout.collapsed .adm-nav-section { display: none; }
+
+/* Nav item */
+.adm-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.83rem;
+  font-weight: 500;
+  transition: all 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.adm-nav-item:hover {
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.9);
+}
+.adm-nav-item.active {
+  background: rgba(38,185,219,0.15);
+  color: #26b9db;
+  font-weight: 600;
+}
+.adm-nav-item.active .adm-nav-icon svg { stroke: #26b9db; }
+
+/* Icon */
+.adm-nav-icon {
+  width: 18px; height: 18px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adm-nav-icon svg { width: 17px; height: 17px; }
+.adm-nav-label { flex: 1; overflow: hidden; }
+
+/* Chevron */
+.adm-chevron {
+  width: 14px; height: 14px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: transform 0.2s;
+  margin-left: auto;
+}
+.adm-chevron svg { width: 13px; height: 13px; }
+.adm-chevron.open { transform: rotate(180deg); }
+
+/* Dropdown group */
+.adm-nav-group { flex-shrink: 0; }
+.adm-nav-parent { justify-content: flex-start; }
+.adm-nav-parent.active { background: rgba(38,185,219,0.15); color: #26b9db; font-weight: 600; }
+.adm-nav-parent.active .adm-nav-icon svg { stroke: #26b9db; }
+
+/* Subnav */
+.adm-subnav {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 2px 0 4px 18px;
+  border-left: 1.5px solid rgba(255,255,255,0.08);
+  margin-left: 20px;
+  margin-top: 2px;
+}
+.adm-sub-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.79rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.adm-sub-item:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.8); }
+.adm-sub-item.active { color: #26b9db; font-weight: 600; }
+.adm-sub-item.active .adm-sub-icon svg { stroke: #26b9db; }
+.adm-sub-icon { width: 15px; height: 15px; flex-shrink: 0; display: flex; align-items: center; }
+.adm-sub-icon svg { width: 14px; height: 14px; }
+
+/* ── Logout ── */
+.adm-logout {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 18px;
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.4);
+  font-size: 0.83rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 100%;
+  text-align: left;
+  transition: all 0.15s;
+}
+.adm-logout:hover { background: rgba(239,68,68,0.12); color: #f87171; }
+.adm-logout .adm-nav-icon svg { width: 17px; height: 17px; }
+
+/* ── Main ── */
+.adm-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  transition: margin-left 0.25s ease;
+  min-width: 0;
+}
+.adm-layout.collapsed .adm-main { margin-left: 64px; }
+
+/* Sidebar toggle button (inside logo bar) */
+.adm-toggle-sb {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.45);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.adm-toggle-sb:hover { color: #fff; background: rgba(255,255,255,0.08); }
+.adm-toggle-sb svg { width: 18px; height: 18px; }
+.adm-layout.collapsed .adm-toggle-sb { margin-left: 0; }
+
+/* Hide old header toggle — toggle is now in sidebar */
+.adm-toggle { display: none; }
+
+/* ── Top Header ── */
+.adm-header {
+  background: #fff;
+  padding: 0 24px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.adm-toggle {
+  background: none;
+  border: none;
+  color: #64748b;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.adm-toggle:hover { background: #f1f5f9; }
+.adm-toggle svg { width: 20px; height: 20px; }
+.adm-header-right { display: flex; align-items: center; gap: 12px; }
+.adm-admin-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  color: #1a3d65;
+  font-weight: 600;
+}
+.adm-admin-icon { width: 16px; height: 16px; display: flex; align-items: center; }
+.adm-admin-icon svg { width: 16px; height: 16px; stroke: #1a3d65; }
+
+/* ── Page Content ── */
+.adm-content { flex: 1; padding: 28px; overflow-y: auto; overflow-x: hidden; }

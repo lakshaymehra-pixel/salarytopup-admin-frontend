@@ -1,0 +1,11 @@
+.pp-wrap { padding: 0; }
+.pp-setup { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 40px; text-align: center; max-width: 640px; margin: 0 auto; }
+.pp-setup h3 { color: #0d2240; margin-bottom: 8px; }
+.pp-setup p { color: #64748b; font-size: 0.88rem; margin-bottom: 20px; }
+.pp-steps { text-align: left; display: flex; flex-direction: column; gap: 10px; }
+.pp-step { display: flex; align-items: flex-start; gap: 12px; font-size: 0.85rem; color: #374151; }
+.pp-step-num { width: 24px; height: 24px; border-radius: 50%; background: #0d2240; color: #fff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.pp-selected { background: #eff6ff !important; }
+.pp-pos { font-weight: 700; padding: 2px 8px; border-radius: 4px; background: #f1f5f9; font-size: 0.85rem; }
+.pp-pos-gold { background: #fef3c7; color: #d97706; }
+.pp-pos-green { background: #f0fdf4; color: #16a34a; }

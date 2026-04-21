@@ -1,0 +1,31 @@
+.co-wrap { padding: 0; }
+.co-load-row { margin-bottom: 16px; }
+.co-layout { display: grid; grid-template-columns: 1fr 380px; gap: 20px; min-height: 600px; }
+@media (max-width: 1100px) { .co-layout { grid-template-columns: 1fr; } }
+
+.co-left { display: flex; flex-direction: column; gap: 12px; }
+.co-field label { display: block; font-size: 0.8rem; font-weight: 600; color: #374151; margin-bottom: 5px; }
+.co-field input { width: 100%; padding: 9px 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 0.88rem; outline: none; box-sizing: border-box; }
+.co-field input:focus { border-color: #3b82f6; }
+.co-textarea { width: 100%; min-height: 380px; padding: 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 0.85rem; font-family: monospace; outline: none; resize: vertical; box-sizing: border-box; line-height: 1.6; }
+.co-textarea:focus { border-color: #3b82f6; }
+
+.co-right { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 20px; height: fit-content; position: sticky; top: 20px; }
+.co-empty { text-align: center; padding: 40px 20px; color: #94a3b8; font-size: 0.85rem; }
+
+.co-score-card { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1.5px solid #f1f5f9; }
+.co-score-circle { width: 64px; height: 64px; border-radius: 50%; border: 3px solid; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; }
+.co-score-circle span { font-size: 1.4rem; font-weight: 800; line-height: 1; }
+.co-score-circle small { font-size: 0.65rem; color: #94a3b8; }
+.co-score-label { font-size: 1rem; font-weight: 700; color: #0d2240; }
+
+.co-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+.co-stat { background: #f8fafc; border-radius: 8px; padding: 10px 12px; }
+.co-stat-val { font-size: 1rem; font-weight: 700; color: #0d2240; }
+.co-stat-lbl { font-size: 0.68rem; color: #94a3b8; margin-top: 2px; }
+
+.co-suggestions { display: flex; flex-direction: column; gap: 6px; }
+.co-suggestion { display: flex; align-items: flex-start; gap: 8px; padding: 8px 10px; border-radius: 7px; font-size: 0.8rem; line-height: 1.4; }
+.co-suggestion-success { background: #f0fdf4; color: #166534; }
+.co-suggestion-warning { background: #fffbeb; color: #92400e; }
+.co-suggestion-error { background: #fef2f2; color: #991b1b; }

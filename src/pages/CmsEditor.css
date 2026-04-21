@@ -1,0 +1,30 @@
+.cms-wrap { display: flex; flex-direction: column; gap: 20px; }
+
+.cms-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.cms-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.cms-tab:hover { border-color: #0d2240; color: #0d2240; }
+.cms-tab.active { background: #0d2240; color: #fff; border-color: #0d2240; font-weight: 600; }
+
+.cms-editor-body {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}

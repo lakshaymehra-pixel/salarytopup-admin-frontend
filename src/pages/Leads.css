@@ -1,0 +1,93 @@
+.leads-wrap { display: flex; flex-direction: column; gap: 20px; }
+
+.leads-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 768px) { .leads-stats { grid-template-columns: repeat(2, 1fr); } }
+
+.leads-stat {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.leads-stat:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.leads-stat-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.leads-stat-val { font-size: 1.7rem; font-weight: 800; color: #0f172a; line-height: 1; margin-bottom: 3px; }
+.leads-stat-lbl { font-size: 0.78rem; color: #64748b; font-weight: 500; }
+
+.leads-tag {
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.leads-msg {
+  display: block;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* Form Leads Cards */
+.fl-cards { display: flex; flex-direction: column; gap: 10px; }
+
+.fl-card {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow 0.15s;
+}
+.fl-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.07); }
+
+.fl-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  gap: 12px;
+}
+.fl-card-left { display: flex; align-items: center; gap: 12px; }
+.fl-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d2240, #2563eb);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700;
+  flex-shrink: 0;
+}
+.fl-card-name { font-size: 0.9rem; font-weight: 700; color: #0d2240; }
+.fl-card-email { font-size: 0.76rem; color: #94a3b8; margin-top: 2px; }
+
+.fl-card-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
+.fl-status-dot {
+  display: flex; align-items: center;
+  font-size: 0.72rem; font-weight: 600;
+  padding: 3px 10px; border-radius: 20px;
+  white-space: nowrap;
+}
+.fl-date { font-size: 0.75rem; color: #94a3b8; white-space: nowrap; }
+
+.fl-card-body {
+  border-top: 1px solid #f1f5f9;
+  padding: 16px 18px;
+  background: #fafbfc;
+}
+.fl-msg-box { margin-bottom: 14px; }
+.fl-msg-label { font-size: 0.72rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.fl-msg-text { font-size: 0.88rem; color: #374151; line-height: 1.6; }
+.fl-card-actions { display: flex; align-items: center; gap: 10px; }

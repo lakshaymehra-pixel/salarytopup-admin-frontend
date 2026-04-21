@@ -1,0 +1,20 @@
+.ks-wrap { padding: 0; }
+.ks-banner { background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 10px; padding: 10px 16px; font-size: 0.82rem; color: #92400e; margin-bottom: 16px; }
+.ks-banner a { color: #d97706; font-weight: 600; }
+.ks-banner-green { background: #f0fdf4; border-color: #86efac; color: #166534; }
+
+.ks-generator { display: flex; gap: 10px; margin-bottom: 14px; }
+.ks-input { flex: 1; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 0.92rem; outline: none; }
+.ks-input:focus { border-color: #3b82f6; }
+
+.ks-seeds { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.ks-seed-btn { padding: 4px 12px; border: 1.5px solid #e2e8f0; border-radius: 20px; background: #fff; font-size: 0.78rem; color: #64748b; cursor: pointer; }
+.ks-seed-btn.active { background: #0d2240; color: #fff; border-color: #0d2240; }
+
+.ks-stats-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.ks-count { font-size: 0.82rem; font-weight: 600; color: #374151; }
+
+.ks-vol { font-size: 0.78rem; background: #f1f5f9; color: #475569; padding: 2px 8px; border-radius: 4px; }
+.ks-diff { font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+.ks-intent { font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+.ks-source { font-size: 0.72rem; background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-style: italic; }

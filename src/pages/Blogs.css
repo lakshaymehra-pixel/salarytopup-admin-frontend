@@ -1,0 +1,23 @@
+/* Analytics Stats Row */
+.bl-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.bl-stat-card { background: #fff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; cursor: pointer; transition: all 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.bl-stat-card:hover { border-color: #0d2240; box-shadow: 0 2px 8px rgba(13,34,64,0.1); }
+.bl-stat-card.active { border-color: #0d2240; background: #f0f4ff; }
+.bl-stat-card:last-child { cursor: default; }
+.bl-stat-card:last-child:hover { border-color: #f1f5f9; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.bl-stat-icon { width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.bl-stat-icon svg { width: 18px; height: 18px; }
+.bl-icon-total { background: #e0e7ff; color: #4f46e5; }
+.bl-icon-pub { background: #dcfce7; color: #16a34a; }
+.bl-icon-draft { background: #fef3c7; color: #b45309; }
+.bl-icon-pages { background: #f0f9ff; color: #0284c7; }
+.bl-stat-num { font-size: 1.4rem; font-weight: 800; color: #0d2240; line-height: 1; }
+.bl-stat-label { font-size: 0.73rem; color: #94a3b8; font-weight: 500; margin-top: 3px; }
+
+/* Filters */
+.bl-filters { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
+.bl-clear-btn { padding: 8px 14px; border: 1.5px solid #fecaca; background: #fee2e2; color: #b91c1c; border-radius: 8px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+.bl-clear-btn:hover { background: #fecaca; }
+
+/* Category tag */
+.bl-tag { display: inline-block; padding: 2px 10px; background: #f1f5f9; color: #475569; border-radius: 20px; font-size: 0.73rem; font-weight: 500; }
